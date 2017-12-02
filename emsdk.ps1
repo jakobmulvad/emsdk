@@ -30,7 +30,7 @@ $env:EMSDK_POWERSHELL = 1
 # therefore have it craft a .ps1 file, which we invoke after finishing python execution,
 # to set up the environment variables
 if (Test-Path "emsdk_set_env.ps1") {
-    & emsdk_set_env.ps1
+    & ./emsdk_set_env.ps1
     Remove-Item emsdk_set_env.ps1
 }
 
